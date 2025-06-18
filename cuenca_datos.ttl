@@ -1,0 +1,59 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+#Dataset 1
+<https://cuencaendatos.cuenca.gob.ec/dataset/edificaciones-patrimoniales> a dcat:Dataset ;
+  dct:title "Edificaciones Patrimoniales"@es ;
+  dct:description "Detalle de edificaciones patrimoniales relevantes del centro histórico de la ciudad de Cuenca con corte a septiembre del 2022."@es ;
+  dct:publisher <https://cuencaendatos.cuenca.gob.ec/organization/unidad-de-transparencia> ;
+  dct:modified "2025-03-26T00:00:00Z"^^dct:W3CDTF ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dct:title "CSV" ;
+    dcat:accessURL <…csv> ;
+    dcat:mediaType "text/csv"
+  ], [
+    a dcat:Distribution ;
+    dct:title "ODS" ;
+    dcat:accessURL <…ods> ;
+    dcat:mediaType "application/ods"
+  ] .
+
+#Dataset 2
+<https://cuencaendatos.cuenca.gob.ec/dataset/emblemas-patrimoniales> a dcat:Dataset ;
+  dct:title "Emblemas Patrimoniales"@es ;
+  dct:description "Detalle de edificaciones patrimoniales emblemáticas de la ciudad de Cuenca con corte a septiembre del 2022."@es ;
+  dct:publisher <https://cuencaendatos.cuenca.gob.ec/organization/fundacion-turismo-para-cuenca> ;
+  dct:modified "2023-03-02T00:00:00Z"^^dct:W3CDTF ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dct:title "CSV" ;
+    dcat:accessURL <…csv> ;
+    dcat:mediaType "text/csv"
+  ], [
+    a dcat:Distribution ;
+    dct:title "ODS" ;
+    dcat:accessURL <…ods> ;
+    dcat:mediaType "application/ods"
+  ] .
+
+#Dataset 3
+<https://cuencaendatos.cuenca.gob.ec/dataset/arboles-patrimoniales> a dcat:Dataset ;
+  dct:title "Árboles Patrimoniales"@es ;
+  dct:description "Detalle de los árboles registrados como patrimonio de la ciudad de Cuenca con corte a septiembre del 2022."@es ;
+  dct:publisher <https://cuencaendatos.cuenca.gob.ec/organization/comision-gestion-ambiental> ;
+  dct:modified "2023-01-10T00:00:00Z"^^dct:W3CDTF ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dct:title "CSV" ;
+    dcat:accessURL <…csv> ;
+    dcat:mediaType "text/csv"
+  ], [
+    a dcat:Distribution ;
+    dct:title "ODS" ;
+    dcat:accessURL <…ods> ;
+    dcat:mediaType "application/ods"
+  ] .
+
+
