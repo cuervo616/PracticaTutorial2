@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html
+  lang="es"
   prefix="dcat: http://www.w3.org/ns/dcat#
                dct: http://purl.org/dc/terms/
                rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -8,41 +9,55 @@
   <head>
     <meta charset="utf-8" />
     <title>Catálogo de Cultura y Patrimonio - Cuenca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-100 font-sans text-gray-800">
     <div
       typeof="dcat:Catalog"
       resource="http://example.org/catalogo-cultura-cuenca"
+      class="max-w-5xl mx-auto p-6"
     >
-      <h1 property="dct:title">Catálogo de Cultura y Patrimonio - Cuenca</h1>
-      <p>
+      <h1 property="dct:title" class="text-4xl font-bold text-blue-800 mb-4">
+        Catálogo de Cultura y Patrimonio - Cuenca
+      </h1>
+      <p class="mb-2">
         <a
           property="foaf:homepage"
           href="https://cuencaendatos.cuenca.gob.ec/group/cultura-y-patrimonio"
-          >Sitio oficial del catálogo</a
+          class="text-blue-600 hover:underline"
         >
+          Sitio oficial del catálogo
+        </a>
       </p>
       <p
         property="dct:language"
         resource="http://id.loc.gov/vocabulary/iso639-1/es"
+        class="mb-2"
       >
-        Idioma: Español
+        <strong>Idioma:</strong> Español
       </p>
       <p
         property="dct:publisher"
         resource="https://cuencaendatos.cuenca.gob.ec/organization/gad-cuenca"
+        class="mb-6"
       >
-        Publicado por: GAD Municipal de Cuenca
+        <strong>Publicado por:</strong> GAD Municipal de Cuenca
       </p>
 
-      <!-- Dataset 1 -->
+      <!-- Dataset Card -->
       <div
         property="dcat:dataset"
         typeof="dcat:Dataset"
         resource="http://example.org/edificaciones-patrimoniales"
+        class="bg-white p-6 mb-6 rounded-lg shadow-md"
       >
-        <h2 property="dct:title">Edificaciones Patrimoniales</h2>
-        <p property="dct:description">
+        <h2
+          property="dct:title"
+          class="text-2xl font-semibold text-blue-700 mb-2"
+        >
+          Edificaciones Patrimoniales
+        </h2>
+        <p property="dct:description" class="mb-2">
           Detalle de edificaciones patrimoniales relevantes del centro histórico
           de Cuenca con corte a septiembre del 2022.
         </p>
@@ -50,10 +65,15 @@
           property="dct:modified"
           content="2025-03-26T00:00:00Z"
           datatype="xsd:dateTime"
+          class="mb-4 text-sm text-gray-600"
         >
           Actualizado: 26 de marzo de 2025
         </p>
-        <div property="dcat:distribution" typeof="dcat:Distribution">
+        <div
+          property="dcat:distribution"
+          typeof="dcat:Distribution"
+          class="space-y-1"
+        >
           <p><strong property="dct:title">CSV</strong></p>
           <p>Tipo: <span property="dcat:mediaType">text/csv</span></p>
           <p>
@@ -64,19 +84,27 @@
           <a
             href="https://cuencaendatos.cuenca.gob.ec/dataset/c780c09c-fb7e-4aa7-8506-72e6a5d86318/resource/55b6d7e3-aa30-427d-a94a-4bf0c57a0b8a/download/gadcuenca_edificacionespatrimoniales_2022septiembre.csv"
             property="dcat:accessURL"
-            >Descargar CSV</a
+            class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
+            Descargar CSV
+          </a>
         </div>
       </div>
 
-      <!-- Dataset 2 -->
+      <!-- Dataset Card -->
       <div
         property="dcat:dataset"
         typeof="dcat:Dataset"
         resource="http://example.org/emblemas-patrimoniales"
+        class="bg-white p-6 mb-6 rounded-lg shadow-md"
       >
-        <h2 property="dct:title">Emblemas Patrimoniales</h2>
-        <p property="dct:description">
+        <h2
+          property="dct:title"
+          class="text-2xl font-semibold text-blue-700 mb-2"
+        >
+          Emblemas Patrimoniales
+        </h2>
+        <p property="dct:description" class="mb-2">
           Edificaciones emblemáticas del patrimonio cuencano con corte a
           septiembre del 2022.
         </p>
@@ -84,10 +112,15 @@
           property="dct:modified"
           content="2023-03-02T00:00:00Z"
           datatype="xsd:dateTime"
+          class="mb-4 text-sm text-gray-600"
         >
           Actualizado: 2 de marzo de 2023
         </p>
-        <div property="dcat:distribution" typeof="dcat:Distribution">
+        <div
+          property="dcat:distribution"
+          typeof="dcat:Distribution"
+          class="space-y-1"
+        >
           <p><strong property="dct:title">CSV</strong></p>
           <p>Tipo: <span property="dcat:mediaType">text/csv</span></p>
           <p>
@@ -98,19 +131,27 @@
           <a
             href="https://cuencaendatos.cuenca.gob.ec/dataset/30a7c379-0e01-40cc-a53a-27f78b87ee77/resource/9a7c4b2e-1902-40bc-a631-aebbffbf8e3e/download/gadcuenca_emblemaspatrimoniales_2022septiembre.csv"
             property="dcat:accessURL"
-            >Descargar CSV</a
+            class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
+            Descargar CSV
+          </a>
         </div>
       </div>
 
-      <!-- Dataset 3 -->
+      <!-- Dataset Card -->
       <div
         property="dcat:dataset"
         typeof="dcat:Dataset"
         resource="http://example.org/arboles-patrimoniales"
+        class="bg-white p-6 mb-6 rounded-lg shadow-md"
       >
-        <h2 property="dct:title">Árboles Patrimoniales</h2>
-        <p property="dct:description">
+        <h2
+          property="dct:title"
+          class="text-2xl font-semibold text-blue-700 mb-2"
+        >
+          Árboles Patrimoniales
+        </h2>
+        <p property="dct:description" class="mb-2">
           Listado de árboles registrados como patrimonio natural de Cuenca, con
           corte a septiembre del 2022.
         </p>
@@ -118,10 +159,15 @@
           property="dct:modified"
           content="2023-01-10T00:00:00Z"
           datatype="xsd:dateTime"
+          class="mb-4 text-sm text-gray-600"
         >
           Actualizado: 10 de enero de 2023
         </p>
-        <div property="dcat:distribution" typeof="dcat:Distribution">
+        <div
+          property="dcat:distribution"
+          typeof="dcat:Distribution"
+          class="space-y-1"
+        >
           <p><strong property="dct:title">CSV</strong></p>
           <p>Tipo: <span property="dcat:mediaType">text/csv</span></p>
           <p>
@@ -132,8 +178,10 @@
           <a
             href="https://cuencaendatos.cuenca.gob.ec/dataset/fd6ba9c5-c771-47dc-b0de-da4e22e1a5d3/resource/1b8bfd61-4146-46ca-b075-2773fb4adf8a/download/gadcuenca_arbolespatrimoniales_2022septiembre.csv"
             property="dcat:accessURL"
-            >Descargar CSV</a
+            class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
+            Descargar CSV
+          </a>
         </div>
       </div>
     </div>
